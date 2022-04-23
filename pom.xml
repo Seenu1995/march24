@@ -17,6 +17,14 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
+                <configuration>
+                    <webResources>
+                        <resource>
+                            <!-- Relative path to the pom.xml directory -->
+                            <directory>more_resources</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
             </plugin>
         </plugins>
     </build>
